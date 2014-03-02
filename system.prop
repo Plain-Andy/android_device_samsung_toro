@@ -2,6 +2,7 @@
 # system.prop for toro
 #
 
+ro.telephony.toroRIL=1
 rild.libpath=/vendor/lib/libsec-ril_lte.so
 rild.libargs=-d /dev/ttys0
 telephony.lteOnCdmaDevice=1
@@ -21,3 +22,7 @@ ro.telephony.default_network=7
 
 # GPU producer to CPU consumer not supported
 ro.bq.gpu_to_cpu_unsupported=1
+
+# Set CDMA SUBSCRIPTION SOURCE to RUIM in Database for this device
+ro.telephony.default_cdma_sub=0
+
